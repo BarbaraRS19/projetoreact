@@ -18,7 +18,6 @@ const handleClick = () => {
 <Header/>
 <Banner/>
 <button onClick={handleClick}>Saiba Mais</button>
-<Sobre/>
 <Fotos/>
 <Titulo/>
     </div>
