@@ -1,7 +1,9 @@
+import Titulo from "./Titulo"
+
 function Header(){
     return (
 <header>
-      <h1>Página de Foquinhas</h1>
+     <Titulo titulo={"Seja Bem-Vindo!"}/>
 </header>
     )
 }

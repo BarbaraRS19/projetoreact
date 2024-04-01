@@ -1,21 +1,19 @@
-
-import './App.css'
-import Header from './components/Header'
-import Banner from './components/Banner'
-import Sobre from './components/Sobre'
-import Fotos from './components/Fotos'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Foca';
+import Sobre from './pages/Sobre';
 
 function App() {
-
+ 
   return (
-    <div>
-<Header/>
-<Banner/>
-<Sobre/>
-<Fotos/>
-    </div>
-   
-  )
+    <Router>
+      
+      <Routes>
+        <Route path="/" element={<Home />} />        
+        <Route path="/sobre" element={<Sobre />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
